@@ -1,0 +1,33 @@
+[{
+  "event": "End of papers submission",
+  "important": true,
+  "date": "01.05.2023"
+}, {
+  "event": "Start of peer review",
+  "date": "01.05.2023"
+}, {
+  "event": "End of workshop proposals submission",
+  "date": "01.05.2023"
+}, {
+  "event": "End of peer review",
+  "date": "01.06.2023"
+}, {
+  "event": "Notification of acceptance",
+  "date": "01.06.2023"
+}, {
+  "event": "Deadline for camera-ready submissions (regular papers)",
+  "date": "15.06.2023"
+}, {
+  "event": "Deadline for camera-ready submissions (extended papers)",
+  "date": "01.07.2023"
+},{
+  "event": "Fee payment deadline",
+  "date": "01.09.2023"
+}, {
+  "event": "Conference in Moscow",
+  "important": true,
+  "date": "25.09.2023"
+}, {
+  "event": "Conference closes",
+  "date": "29.09.2023"
+}]
