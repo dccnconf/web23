@@ -20,7 +20,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'purple': {
+        'indigo': {
           500: '#667eea',
           600: '#5a67d8'
         }
