@@ -301,6 +301,10 @@
   "slug": "msu",
   "name": "Lomonosov Moscow State University",
   "country": "Russia"
+}, {
+  "id": 51,
+  "slug": "nust",
+  "name": "Namibia University of Science and Technology",
+  "country": "Nambia"
 }
-
 ]

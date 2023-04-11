@@ -73,6 +73,9 @@
   "name": "A. Krishnamoorthy",
   "affiliations": [{"slug":"cochin"}]
 }, {
+  "name": "R. Kumar",
+  "affiliations": [{"slug":"nust"}]
+}, {
   "name": "N.A. Kuznetsov",
   "affiliations": [{"slug":"mipt"}],
   "ieee": "member"
