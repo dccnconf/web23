@@ -191,11 +191,11 @@ const ConferenceMenu = ({onClick}) => (
       comment="Conference venue"
       onClick={onClick}
     />
-    {/*<NavbarDropdownMenuItem*/}
-    {/*  href="/" as="/#fees" icon={faCoins} text="Registration & Fees"*/}
-    {/*  comment="Registration fees and discounts for our participants"*/}
-    {/*  onClick={onClick}*/}
-    {/*/>*/}
+    <NavbarDropdownMenuItem
+      href="/" as="/#fees" icon={faCoins} text="Registration & Fees"
+      comment="Registration fees and discounts for our participants"
+      onClick={onClick}
+    />
     <NavbarDropdownMenuItem
       href="/" as="/#committee" icon={faUserFriends} text="Organizers & Sponsors"
       comment="Organizing and technical program committees"

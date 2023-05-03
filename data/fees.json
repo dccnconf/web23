@@ -3,11 +3,11 @@
   "order": 1,
   "prices": [{
     "ieeeMember": false,
-    "price": 5000,
+    "price": 10000,
     "currency": "RUB"
   }, {
     "ieeeMember": true,
-    "price": 4250,
+    "price": 7000,
     "currency": "RUB"
   }]
 }, {
@@ -15,7 +15,7 @@
   "order": 2,
   "prices": [{
     "ieeeMember": false,
-    "price": 500,
+    "price": 1000,
     "currency": "RUB"
   }, {
     "ieeeMember": true,
@@ -27,11 +27,21 @@
   "order": 3,
   "prices": [{
     "ieeeMember": false,
-    "price": 180,
+    "price": 200,
     "currency": "EUR"
   }, {
     "ieeeMember": true,
-    "price": 153,
+    "price": 170,
     "currency": "EUR"
+  }]
+}, {
+  "category": "Listeners",
+  "order": 4,
+  "prices": [{
+    "ieeeMember": false,
+    "price": "Free"
+  }, {
+    "ieeeMember": true,
+    "price": "Free"
   }]
 }]

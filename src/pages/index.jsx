@@ -13,13 +13,10 @@ import Fees from "../components/Fees";
 import SponsorsImageGallery from "../components/SponsorsImageGallery";
 import {getAllOrganizations} from "../libs/organizations";
 import {Venue} from "../components/Venue";
-import KeynoteSpeakers from "../components/KeynoteSpeakers";
-import {getAllSpeakers} from "../libs/keynotes";
 import TpcMembersList from "../components/TpcMembersList";
 import {getAllTpcMembers} from "../libs/tpc";
-import Proceedings from "../components/Proceedings";
 
-export default function Home({committeeMembers, organizations, topics, deadlines, tpcMembers}) {
+export default function Home({committeeMembers, organizations, topics, deadlines, tpcMembers, fees}) {
   return (
     <Layout pageTitle={"DCCN'2023"} active="conference">
       <div className="lg:pb-12">
@@ -27,7 +24,7 @@ export default function Home({committeeMembers, organizations, topics, deadlines
       </div>
 
       <section id="about" className="pt-12 bg-gray-100">
-        <div className="container mx-auto px-4 pb-12 lg:w-1/2">
+        <div className="container mx-auto px-4 pb-12 xl:w-1/2">
 
           <h2 className="h2">About</h2>
           <div className="py-12 text-gray-600">
@@ -72,19 +69,19 @@ export default function Home({committeeMembers, organizations, topics, deadlines
         </div>
       </section>
 
-      {/*<section id="fees" className="pt-12 bg-purple-100">*/}
-      {/*  <div className="container mx-auto px-4 pb-12 lg:w-1/2">*/}
-      {/*    <h2 className="h2">Registration & Fees</h2>*/}
-      {/*    <Fees className="mt-8"*/}
-      {/*        fees={fees}*/}
-      {/*    />*/}
-      {/*    /!*<p className="text-xl">*!/*/}
-      {/*    /!*  <Link href={"/support"} as="/support#payment">*!/*/}
-      {/*    /!*    <a className="text-blue-500 hover:underline">Read more...</a>*!/*/}
-      {/*    /!*  </Link>*!/*/}
-      {/*    /!*</p>*!/*/}
-      {/*  </div>*/}
-      {/*</section>*/}
+      <section id="fees" className="pt-12 bg-purple-100">
+        <div className="container mx-auto px-4 pb-12 lg:w-1/2">
+          <h2 className="h2">Registration & Fees</h2>
+          <Fees className="mt-8"
+              fees={fees}
+          />
+          {/*<p className="text-xl">*/}
+          {/*  <Link href={"/support"} as="/support#payment">*/}
+          {/*    <a className="text-blue-500 hover:underline">Read more...</a>*/}
+          {/*  </Link>*/}
+          {/*</p>*/}
+        </div>
+      </section>
 
       <section id="committee" className="pt-120">
         <div className="container mx-auto px-4 pb-12 lg:w-3/4">

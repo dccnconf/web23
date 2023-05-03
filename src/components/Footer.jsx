@@ -71,7 +71,7 @@ const getConferenceLinks = () => [
   // <FooterLink href={"/"} hash="keynotes" label="Keynotes" />,
   <FooterLink href={"/"} hash="timeline" label="Timeline" />,
   <FooterLink href={"/"} hash="venue" label="Venue" />,
-  // <FooterLink href={"/"} hash="fees" label="Registration" />,
+  <FooterLink href={"/"} hash="fees" label="Registration & Fees" />,
   <FooterLink href={"/"} hash="committee" label="Organizers" />,
 ];
 
