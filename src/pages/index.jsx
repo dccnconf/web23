@@ -83,7 +83,7 @@ export default function Home({committeeMembers, organizations, topics, deadlines
         </div>
       </section>
 
-      <section id="committee" className="pt-120">
+      <section id="committee" className="pt-12">
         <div className="container mx-auto px-4 pb-12 lg:w-3/4">
 
           <div className="mb-16">
