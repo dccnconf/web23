@@ -53,16 +53,17 @@ export default function About({ topics }) {
         <div className="block">
           <div className="">
             <div className="h4 text-center sm:text-left mt-4 sm:mt-0">Proceedings</div>
+            <img src="/images/mathematics-logo.png" alt="Mathematics logo" className="hidden sm:block w-4/5 mx-auto sm:w-3/12 sm:float-left sm:mr-4 pt-3 mb-2"/>
             <p className="md:text-xl">
               Traditionally, the accepted and presented DCCN papers are published in the Conference Proceedings volume
               (included into the Russian Science Citation Index).&nbsp;
-              <img src="/images/mathematics-logo.png" alt="Mathematics logo" className="w-4/5 mx-auto sm:w-3/12 sm:float-left sm:mr-4 pt-3 mb-2"/>
+              <img src="/images/mathematics-logo.png" alt="Mathematics logo" className="sm:hidden w-4/5 mx-auto sm:w-3/12 sm:float-left sm:mr-4 pt-3 mb-2"/>
               The revised selected submissions in English, recommended by the Program Committee,
               also appear as a stand-alone volume of selected extended papers published by Springer
               (indexed in Scopus and Web of Science).
-              <img src="/images/future-internet.png" alt="Future internet logo" className="w-4/5 mx-auto sm:w-1/4 sm:float-right pt-3 sm:mr-2"/>
             </p>
             <p className="md:text-xl">
+              <img src="/images/future-internet.png" alt="Future internet logo" className="w-4/5 mx-auto sm:w-1/4 sm:float-right pt-3 sm:mr-2"/>
               Authors of the best selected papers presented at DCCN, recommended by the Program Committee,
               will be invited to submit their extended papers to the Special Issues of the MDPI “Mathematics” journal (Q1, WoS, Scopus),
               MDPI "Sensors" journal (Q1, WoS, Scopus) and MDPI "Future Internet" journal (Q2, WoS, Scopus).
