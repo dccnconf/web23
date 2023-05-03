@@ -63,7 +63,7 @@ export default function About({ topics }) {
               (indexed in Scopus and Web of Science).
             </p>
             <p className="md:text-xl">
-              <img src="/images/future-internet.png" alt="Future internet logo" className="w-4/5 mx-auto sm:w-1/4 sm:float-right pt-3 sm:mr-2"/>
+              <img src="/images/future-internet.png" alt="Future internet logo" className="w-4/5 mx-auto sm:w-1/4 sm:float-right pt-3 sm:mr-2 mb-2"/>
               Authors of the best selected papers presented at DCCN, recommended by the Program Committee,
               will be invited to submit their extended papers to the Special Issues of the MDPI “Mathematics” journal (Q1, WoS, Scopus),
               MDPI "Sensors" journal (Q1, WoS, Scopus) and MDPI "Future Internet" journal (Q2, WoS, Scopus).
