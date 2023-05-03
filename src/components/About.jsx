@@ -68,9 +68,15 @@ export default function About({ topics }) {
               to the usual standards of these journals.
             </p>
             <div className="flex flex-wrap px-4 items-center justify-center gap-4 mt-8">
-              <img src="/images/mathematics-logo.png" alt="Mathematics logo" className="w-4/5 mx-auto sm:w-1/4"/>
-              <img src="/images/sensors-logo.png" alt="Sensors logo" className="w-4/5 mx-auto sm:w-1/4"/>
-              <img src="/images/future-internet.png" alt="Future internet logo" className="w-4/5 mx-auto sm:w-1/4"/>
+              <a href="https://www.mdpi.com/journal/mathematics/special_issues/8A8D7ML512" target="_blank" className="w-4/5 mx-auto sm:w-1/4">
+                <img src="/images/mathematics-logo.png" alt="Mathematics logo" />
+              </a>
+              <a href="https://www.mdpi.com/journal/sensors/special_issues/Internet_Mobile_Things_Wireless_Sensor_Networks" target="_blank" className="w-4/5 mx-auto sm:w-1/4">
+                <img src="/images/sensors-logo.png" alt="Sensors logo" />
+              </a>
+              <a href="https://www.mdpi.com/journal/futureinternet/special_issues/BY09I05QOZ" target="_blank" className="w-4/5 mx-auto sm:w-1/4">
+                <img src="/images/future-internet.png" alt="Future internet logo" />
+              </a>
             </div>
           </div>
         </div>
