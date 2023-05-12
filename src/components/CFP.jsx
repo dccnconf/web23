@@ -28,7 +28,7 @@ const CFP = ({topics, className = ""} = {}) => {
       For your convenience, we made available the DCCN templates in the scientific authoring platform Overleaf:
     </p>
     <div className="mt-4 pl-8">
-      <a href="https://www.overleaf.com/latex/templates/dccn2023-latex-ru/wwfcfgyycsxj"
+      <a href="https://www.overleaf.com/latex/templates/dccn2023-latex-ru/bgftzwpgkfsv"
          target="_blank"
          className="text-indigo-700">
         <FontAwesomeIcon icon={faLink} size="lg" className="mr-3"/>
@@ -36,7 +36,7 @@ const CFP = ({topics, className = ""} = {}) => {
       </a>
     </div>
     <div className="mt-4 pl-8">
-      <a href="https://www.overleaf.com/latex/templates/dccn2023-submission-template-eng/stvdgxcjsggd"
+      <a href="https://www.overleaf.com/latex/templates/dccn2023-submission-template-eng/jtfbbysddrfq"
          target="_blank"
          className="text-indigo-700">
         <FontAwesomeIcon icon={faLink} size="lg" className="mr-3"/>
