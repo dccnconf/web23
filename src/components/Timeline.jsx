@@ -6,7 +6,11 @@ import moment from "moment";
 
 const Timeline = ({ deadlines }) => {
   return deadlines && (
-    <>
+    <div>
+      <p className="md:leading-7 md:text-xl md:mx-auto text-gray-700 mt-4">
+        Due to numerous requests the paper submission deadline
+        has been extended till 01 June 2023 <span className="text-red-800 font-bold">(HARD deadline)</span>.
+      </p>
       <div className="relative">
         <div className="border-r-4 border-gray-400 absolute h-full top-0" style={{left: 22}} />
         <ul className="list-none m-0 pt-3 pb-1">
@@ -27,7 +31,7 @@ const Timeline = ({ deadlines }) => {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   ) || (<></>)
 };
 
