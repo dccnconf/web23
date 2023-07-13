@@ -48,7 +48,7 @@ export default function Home({committeeMembers, organizations, topics, deadlines
       {/*</section>*/}
 
       <section id="keynotes" className="mt-12">
-        <div className="container mx-auto px-4 pb-12 lg:w-3/4 xl:w-2/3">
+        <div className="container mx-auto px-4 pb-12 lg:w-3/4 xl:w-2/3 2xl:w-1/2">
           <h2 className="h2">Keynote Speakers</h2>
           <KeynoteSpeakers
             className="mt-12"
