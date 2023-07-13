@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "koucheryavy",
+    "name": "Andrey Koucheryavy",
+    "appeal": "Prof.",
+    "country": "Russia",
+    "affiliations": [
+      {
+        "name": "Bonch-Bruevich St. Petersburg State University of Telecommunications",
+        "department": null,
+        "city": "St. Petersburg",
+        "country": "Russia",
+        "position": "Professor"
+      }
+    ],
+    "avatar": "/images/avatars/koucheryavy.png"
+  },
+  {
+    "slug": "khorov",
+    "name": "Evgeny Khorov",
+    "appeal": "Prof.",
+    "country": "Russia",
+    "avatar": "/images/avatars/khorov.jpeg",
+    "affiliations": [
+      {
+        "name": "IITP RAS",
+        "city": "Moscow",
+        "department": null,
+        "country": "Russia",
+        "position": "Professor"
+      }
+    ]
+  },
+  {
+    "slug": "melikov",
+    "name": "Agassi Melikov",
+    "appeal": "Prof.",
+    "country": "Azerbaijan",
+    "avatar": "/images/avatars/melikov.png",
+    "affiliations": [
+      {
+        "name": "Institute of Control Systems, National Academy of Sciences of Azerbaijan",
+        "department": null,
+        "city": null,
+        "country": "Azerbaijan",
+        "position": "Professor"
+      }
+    ]
+  }
+]
