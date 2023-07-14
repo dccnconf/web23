@@ -46,5 +46,21 @@
         "position": "Professor"
       }
     ]
+  },
+  {
+    "slug": "rumyantsev",
+    "name": "Alexander Rumyantsev",
+    "appeal": "Prof.",
+    "country": "Russia",
+    "avatar": "/images/avatars/rumyantsev.png",
+    "affiliations": [
+      {
+        "name": "Institute of Applied Mathematical Research of Karelian Research Centre of RAS",
+        "department": null,
+        "city": null,
+        "country": "Russia",
+        "position": "Professor"
+      }
+    ]
   }
 ]
