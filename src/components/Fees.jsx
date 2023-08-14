@@ -11,6 +11,9 @@ const Fees = ({ fees, className = "" }) => {
         Registration fees are waived for invited keynote speakers and for invited reviewers.
         The reviewers undertake to carefully and professionally evaluate at least 5 submitted manuscripts in an objective and impartial manner.
       </p>
+      <p className="md:leading-7 md:text-xl text-gray-700 mt-8">
+        Registration fees below include VAT tax 20%.
+      </p>
       <FeesTable fees={fees} className="my-12" />
       {/*<h3 className="h3 mt-12">Payment information</h3>*/}
       {/*<p className="md:leading-7 md:text-xl text-gray-700 mt-8">*/}
@@ -42,15 +45,15 @@ export const FeesTable = ({ fees, className = "" }) => {
                 <thead>
                 <tr>
                   <th
-                    className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-800 uppercase tracking-wider">
+                    className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-800 uppercase tracking-wider">
                     PARTICIPANTS
                   </th>
                   <th
-                    className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-800 uppercase tracking-wider">
+                    className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-800 uppercase tracking-wider">
                     NO IEEE MEMBERSHIP
                   </th>
                   <th
-                    className="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-800 uppercase tracking-wider">
+                    className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-800 uppercase tracking-wider">
                     IEEE MEMBER
                   </th>
                 </tr>
@@ -75,23 +78,30 @@ const FeeTableRow = ({ fee }) => {
   const regularPrice = fee.prices[0];
   const ieeePrice = fee.prices[1];
   const discount = regularPrice.price > 0 ? (1 - ieeePrice.price / regularPrice.price) * 100 : undefined;
+  const vatValue = regularPrice.vat ? (regularPrice.price / (100 + regularPrice.vat) * regularPrice.vat).toFixed(2) : undefined;
+  const ieeeVatValue = ieeePrice.vat ? (ieeePrice.price / (100 + ieeePrice.vat) * ieeePrice.vat).toFixed(2) : undefined;
 
   return (
     <tr>
-      <td className="px-6 py-4 text-gray-700 leading-tight md:text-lg">
+      <td width="34%" className="text-center px-6 py-4 text-gray-700 leading-tight md:text-lg">
         {fee.category}
       </td>
-      <td className="px-6 py-4 whitespace-no-wrap font-bold">
-        {regularPrice.price} {regularPrice.currency}
+      <td width="33%" className="text-center px-6 py-4 whitespace-no-wrap font-bold">
+        {regularPrice.price} {regularPrice.currency} {vatValue && <div className="font-normal">(incl. VAT ({regularPrice.vat}%) - {vatValue} {regularPrice.currency})</div>}
       </td>
-      <td className="px-6 py-4 whitespace-no-wrap font-bold text-center">
+      <td width="33%" className="text-center px-6 py-4 whitespace-no-wrap font-bold text-center">
         <div className="text-green-700">
-          {ieeePrice.price} {ieeePrice.currency}
+          {ieeePrice.price} {ieeePrice.currency}{' '}
+          {discount !== undefined && (
+            <span className="font-medium text-sm text-green-500 font-bold">
+               -{discount.toFixed(0)}%
+            </span>
+          )}
         </div>
         {
-          discount !== undefined && (
+          ieeeVatValue !== undefined && (
             <div className="font-medium text-sm text-green-500 font-bold">
-              -{discount.toFixed(0)}%
+              (incl. VAT ({ieeePrice.vat}%) - {ieeeVatValue} {regularPrice.currency})
             </div>
           )
         }

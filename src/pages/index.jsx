@@ -17,6 +17,7 @@ import TpcMembersList from "../components/TpcMembersList";
 import {getAllTpcMembers} from "../libs/tpc";
 import {getAllSpeakers} from "../libs/keynotes";
 import KeynoteSpeakers from "../components/KeynoteSpeakers";
+import Link from "next/link";
 
 export default function Home({committeeMembers, organizations, topics, deadlines, tpcMembers, fees, speakers}) {
   return (
@@ -77,6 +78,11 @@ export default function Home({committeeMembers, organizations, topics, deadlines
           <Fees className="mt-8"
               fees={fees}
           />
+          <p className="text-xl">
+            <Link href={"/support"} as="/support#payment">
+              <span className="text-blue-500 hover:underline">Read more...</span>
+            </Link>
+          </p>
           {/*<p className="text-xl">*/}
           {/*  <Link href={"/support"} as="/support#payment">*/}
           {/*    <a className="text-blue-500 hover:underline">Read more...</a>*/}

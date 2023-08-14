@@ -91,7 +91,14 @@ export default function Navbar({active = 'conference'}) {
               {/*  <ProgramMenu onClick={closeAll}/>*/}
               {/*</NavbarDropdownItem>*/}
 
-              <NavbarLink text="Support" isActive={active === 'support'} href="/support"/>
+              <NavbarDropdownItem
+                isActive={active === 'support'}
+                text="Support"
+                isShown={isShown.support}
+                setIsShown={shown => setIsMenuShown('support', shown)}
+                >
+              <SupportMenu onClick={closeAll} />
+            </NavbarDropdownItem>
 
             </nav>
             <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0"/>
@@ -130,7 +137,7 @@ export default function Navbar({active = 'conference'}) {
                     <div>
                       <nav className="grid gap-8">
                         {
-                          (active === 'conference' && (<ConferenceMenu onClick={closeAll}/>))
+                          (active === 'conference' && (<ConferenceMenu onClick={closeAll}/>)) || (active === 'support' && (<SupportMenu onClick={closeAll} />))
                         }
                       </nav>
                     </div>
