@@ -1,4 +1,6 @@
 import React from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faFilePdf} from "@fortawesome/free-regular-svg-icons";
 
 const Fees = ({ fees, className = "" }) => {
   return (
@@ -6,7 +8,17 @@ const Fees = ({ fees, className = "" }) => {
       <p className="md:leading-7 md:text-xl text-gray-700">
         At least one author per accepted paper must pay the registration fee and present the paper in the conference session where the paper is scheduled.
         Please note, that once the registration payment is done, <span className="text-red-800 font-bold">no refund is available</span>.
+        You can download payment details via the following link:
       </p>
+      <div className="mt-8">
+        <a href="/downloads/DCCN2023_FEES.pdf"
+           target="_blank"
+           className="text-blue-500 hover:underline text-lg"
+        >
+          <FontAwesomeIcon icon={faFilePdf} size="lg" className="mr-3" />
+          DCCN2023_FEES.PDF
+        </a>
+      </div>
       <p className="md:leading-7 md:text-xl text-gray-700 mt-8">
         Registration fees are waived for invited keynote speakers and for invited reviewers.
         The reviewers undertake to carefully and professionally evaluate at least 5 submitted manuscripts in an objective and impartial manner.
