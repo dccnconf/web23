@@ -62,5 +62,21 @@
         "position": "Professor"
       }
     ]
+  },
+  {
+    "slug": "hammoudeh",
+    "name": "Mohammad Hammoudeh",
+    "appeal": "Prof.",
+    "country": "Saudi Arabia",
+    "avatar": "/images/avatars/hammoudeh.jpeg",
+    "affiliations": [
+      {
+        "name": "King Fahd University of Petroleum & Minerals",
+        "department": null,
+        "city": null,
+        "country": "Saudi Arabia",
+        "position": "Professor"
+      }
+    ]
   }
 ]
