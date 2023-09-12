@@ -75,6 +75,14 @@ const PaymentDetails = ({ className }) => {
           <a href="/downloads/act-legal.doc" className="text-indigo-700" target="_blank">Act to an agreement with a legal entity (Акт с юридическим лицом)</a>
         </li>
       </ul>
+      <p className="md:leading-7 md:text-xl text-gray-700 my-4">
+        Payment order templates (образцы платежных поручений):
+        если взнос равен 10000 руб - <a href="/downloads/pay_10000.rtf" className="text-indigo-700" target="_blank">скачать</a>,
+        если взнос равен 1000 руб - <a href="/downloads/pay_1000.rtf" className="text-indigo-700" target="_blank">скачать</a>,
+        если взнос равен 8500 руб - <a href="/downloads/pay_8500.rtf" className="text-indigo-700" target="_blank">скачать</a>.
+        Необходимо заменить "ФИО участника" на фамилию и инициалы участника.
+      </p>
+
 
       <h4 className="h4">
         Step 3.
