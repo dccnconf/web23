@@ -52,7 +52,7 @@ export default function TrackProgram({program, track, className = ""} = {}) {
 
             <SessionTable session={session} duration={program.common.lecture.duration} />
             <p className="mt-2 mb-10">
-              <Link href={"/program"} as="/program#top">
+              <Link legacyBehavior href={"/program"} as="/program#top">
                 <a className="text-blue-500 hover:underline">
                   <FontAwesomeIcon icon={faAngleUp} className="mr-1" />
                   Back to top
@@ -71,6 +71,7 @@ export default function TrackProgram({program, track, className = ""} = {}) {
 // PARTIALS
 // --------------------------------------------------------------------------------------
 function SessionTable({ session, duration, className = ""} = {}) {
+
   return (
     <div className={className}>
       <table className="min-w-full divide-y divide-gray-200">
@@ -86,12 +87,12 @@ function SessionTable({ session, duration, className = ""} = {}) {
                 </div>
                 <div className="text-gray-600 italic">
                   <FontAwesomeIcon icon={faClock} className="mr-1" />
-                  {duration.minutes}m
+                  {lecture.duration || duration.minutes}m
                 </div>
               </td>
               <td className="border border-gray-300 px-2 text-gray-700 leading-tight py-2">
                 <div>
-                  <Link href={"/papers/[id]"} as={`/papers/${lecture.paper.id}`}>
+                  <Link legacyBehavior href={"/papers/[id]"} as={`/papers/${lecture.paper.id}`}>
                     <a className="text-blue-500 hover:underline">{lecture.paper.title}</a>
                   </Link>
                 </div>

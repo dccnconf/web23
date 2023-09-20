@@ -5,7 +5,7 @@
   "order": 1,
   "color": "pink-200",
   "icon": "network-wired",
-  "room": 214,
+  "room": 7,
   "topics": [
     "Communication networks algorithms and protocols",
     "Wireless and mobile networks",
@@ -22,7 +22,7 @@
   "slug": "trb",
   "letter": "B",
   "order": 2,
-  "room": 219,
+  "room": 9,
   "color": "green-200",
   "icon": "wave-square",
   "topics": [
@@ -38,7 +38,7 @@
   "slug": "trc",
   "letter": "C",
   "order": 3,
-  "room": 218,
+  "room": 10,
   "color": "purple-200",
   "icon": "desktop",
   "topics": [

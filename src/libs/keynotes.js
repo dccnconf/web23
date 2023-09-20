@@ -39,6 +39,7 @@ export const getPlenarySchedule = (part = 0) => {
 
     if (part.lectures) {
       newPart.lectures = part.lectures.map(lecture => {
+
         // Copy lecture and load speaker:
         const newLecture = {...lecture};
         newLecture.speaker = getSpeaker(lecture.speaker);

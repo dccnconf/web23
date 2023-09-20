@@ -39,52 +39,52 @@ const ProgramOverview = ({ program, tracks, className = "" }) => {
               - full conference program in PDF format
             </span>
           </li>
-          {/*<li>*/}
-          {/*  <Link href={"/program"} as="/program#plenary">*/}
-          {/*    <a className="text-blue-500 text-lg leading-7 hover:underline">*/}
-          {/*      <FontAwesomeIcon icon={faStar} className="mr-2 text-yellow-500" />*/}
-          {/*      <span>Plenary session program</span>*/}
-          {/*    </a>*/}
-          {/*  </Link>*/}
-          {/*</li>*/}
-          {/*{*/}
-          {/*  tracks && tracks.map((track, index) => (*/}
-          {/*    <li key={index}>*/}
-          {/*      <Link href={"/program"} as={`/program#${track.slug}`}>*/}
-          {/*        <a className="text-blue-500 text-lg leading-7 hover:underline">*/}
-          {/*          <FontAwesomeIcon icon={track.icon} className={`mr-2 ${getTrackTextColor(track, { heavy: true })}`} />*/}
-          {/*          <span>Track {track.letter}: {track.name}</span>*/}
-          {/*        </a>*/}
-          {/*      </Link>*/}
-          {/*    </li>*/}
-          {/*  ))*/}
-          {/*}*/}
+          <li>
+            <Link legacyBehavior href={"/program"} as="/program#plenary">
+              <a className="text-blue-500 text-lg leading-7 hover:underline">
+                <FontAwesomeIcon icon={faStar} className="mr-2 text-yellow-500" />
+                <span>Plenary session program</span>
+              </a>
+            </Link>
+          </li>
+          {
+            tracks && tracks.map((track, index) => (
+              <li key={index}>
+                <Link legacyBehavior href={"/program"} as={`/program#${track.slug}`}>
+                  <a className="text-blue-500 text-lg leading-7 hover:underline">
+                    <FontAwesomeIcon icon={track.icon} className={`mr-2 ${getTrackTextColor(track, { heavy: true })}`} />
+                    <span>Track {track.letter}: {track.name}</span>
+                  </a>
+                </Link>
+              </li>
+            ))
+          }
         </ul>
       </div>
 
       {/* Tables per day */}
-    {/*  <div>*/}
-    {/*    {*/}
-    {/*      program.days.map((progDay, index) => (*/}
-    {/*        <div key={index}>*/}
-    {/*          <h3 className="text-xl font-extrabold text-left text-indigo-600 mb-0 mt-12">*/}
-    {/*            <Moment format="DD MMM. YYYY (dddd)">{progDay.date}</Moment>*/}
-    {/*          </h3>*/}
-    {/*          {*/}
-    {/*            progDay.description && (*/}
-    {/*              <h4 className="text-lg font-extrabold text-gray-600 mt-0 mb-12">{progDay.description}</h4>*/}
-    {/*            )*/}
-    {/*          }*/}
-    {/*          <VideoConfCard*/}
-    {/*            className="my-8"*/}
-    {/*            videoHtml={progDay.online && progDay.video}*/}
-    {/*            links={(progDay.online && progDay.online.links) || []}*/}
-    {/*          />*/}
-    {/*          <ProgDayTable progDay={progDay} tracks={tracks} className="" />*/}
-    {/*        </div>*/}
-    {/*      ))*/}
-    {/*    }*/}
-    {/*  </div>*/}
+      <div>
+        {
+          program.days.map((progDay, index) => (
+            <div key={index}>
+              <h3 className="text-xl font-extrabold text-left text-indigo-600 mb-0 mt-12">
+                <Moment format="DD MMM. YYYY (dddd)">{progDay.date}</Moment>
+              </h3>
+              {
+                progDay.description && (
+                  <h4 className="text-lg font-extrabold text-gray-600 mt-0 mb-12">{progDay.description}</h4>
+                )
+              }
+              <VideoConfCard
+                className="my-8"
+                videoHtml={progDay.online && progDay.video}
+                links={(progDay.online && progDay.online.links) || []}
+              />
+              <ProgDayTable progDay={progDay} tracks={tracks} className="" />
+            </div>
+          ))
+        }
+      </div>
     </div>
   )
 };
@@ -168,7 +168,7 @@ function TrackSessionCell({ track, interval }) {
         </div>
         <div className="font-medium">
           <div>
-            <Link href={"/program"} as={`/program#${session.slug}`}>
+            <Link legacyBehavior href={"/program"} as={`/program#${session.slug}`}>
               <a className="text-blue-500 hover:underline">
                 Session {session.name}
               </a>
@@ -205,7 +205,7 @@ function SingleSessionCell({ interval, tracks, isPlenary = false } = {}) {
           {
             (isPlenary || interval.type === "plenary") && interval.type !== "break"
               ? (
-                <Link href={"/program"} as="/program#plenary">
+                <Link legacyBehavior href={"/program"} as="/program#plenary">
                   <a className="text-blue-500 hover:underline">
                     {label}
                   </a>
