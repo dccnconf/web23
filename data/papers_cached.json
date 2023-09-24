@@ -39,7 +39,7 @@
     "title": "Influence of Access Points' Height and High Signal Relation in WLAN Fingerprinting-Based Indoor Positioning Systems' Accuracy",
     "abstract": "Wireless Local Area Network (WLAN) Fingerprinting-based Indoor Positioning Systems (IPS) offer several key advantages over other indoor positioning technologies, including cost-effectiveness with high accuracy and passive tracking of entities' location without Global Positioning System (GPS) dependence. However, achieving a satisfactory accuracy performance of the WLAN fingerprinting-based IPS is still challenging, as it is affected by several factors, such as obstacles (e.g., walls and furniture) that can block or weaken wireless signals. Additionally, the IPS's accuracy can be affected by environmental changes, such as the height, addition, or removal of a WLAN Access Point (AP) or changes in radio frequency interference. This paper presents a novel algorithm incorporating a probabilistic analytical model employing only high signal relations that mitigate the effect of low signal relation on the WLAN fingerprinting-based IPS, thus improving the accuracy performance. Furthermore, it analyses the impact of AP heights on the accuracy performance of the WLAN IPS. Upon extensive experiments, the proposed algorithm improves the accuracy of the IPS by an average of 32.74% in terms of Root Mean Square Error (RMSE). These results imply that incorporating APs' height and high signal relations can significantly improve the accuracy performance of the WLAN fingerprinting-based IPS.",
     "authors": [
-      "Mohammed muthanna"
+      "Mohammed Muthanna"
     ]
   },
   {
