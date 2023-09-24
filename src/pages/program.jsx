@@ -22,6 +22,7 @@ const ProgramPage = ({ program, tracks, plenary }) => {
           <h3 className="text-2xl font-extrabold text-indigo-600 text-center leading-tight">
             <Moment format="DD MMM. YYYY, dddd">{plenary.date}</Moment>
           </h3>
+          <h4 className="text-xl font-bold text-center leading-tight mt-0 text-gray-500">Small conference hall</h4>
           <ProgramPlenary
             className={""}
             schedule={plenary}
@@ -35,6 +36,7 @@ const ProgramPage = ({ program, tracks, plenary }) => {
             <div className="container mx-auto md:w-3/4 px-4 md:px-8 my-12">
               <h2 className="h2 text-4xl leading-tight">Track {track.letter}</h2>
               <h3 className="text-2xl font-bold text-center leading-tight mt-0 text-gray-600">{track.name}</h3>
+              <h4 className="text-xl font-bold text-center leading-tight mt-0 text-gray-500">Room {track.room}</h4>
               <TrackProgram track={track} program={program} />
             </div>
           </section>
