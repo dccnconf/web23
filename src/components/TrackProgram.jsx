@@ -71,7 +71,6 @@ export default function TrackProgram({program, track, className = ""} = {}) {
 // PARTIALS
 // --------------------------------------------------------------------------------------
 function SessionTable({ session, duration, className = ""} = {}) {
-  console.log(session.lectures.filter((item) => !item.paper.authors))
 
   return (
     <div className={className}>
