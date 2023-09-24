@@ -13,13 +13,13 @@ const VideoConfCard = ({ links, videoHtml, className = "", isGreen = false } = {
       <div className={`border-2 ${boxColorClass} px-6`}>
         <div className="">
           <div className="md:flex md:items-center">
-            {/*{*/}
-            {/*  !!videoHtml && (*/}
-            {/*    <div className="md:mr-8 mb-8 md:mb-0">*/}
-            {/*      <div dangerouslySetInnerHTML={{__html: videoHtml}}/>*/}
-            {/*    </div>*/}
-            {/*  )*/}
-            {/*}*/}
+            {
+              !!videoHtml && (
+                <div className="md:mr-8 mb-8 md:mb-0">
+                  <div dangerouslySetInnerHTML={{__html: videoHtml}}/>
+                </div>
+              )
+            }
             <ul className="">
               {
                 links.filter(link => !link.disabled).map((link, index) => (
@@ -31,10 +31,10 @@ const VideoConfCard = ({ links, videoHtml, className = "", isGreen = false } = {
             </ul>
           </div>
           <div className="mt-0 mb-2">
-            <a href="/downloads/MS_TEAMS_INSTRUCTION.pdf" target="_blank" className="hover:underline text-yellow-600">
+            <a href="/downloads/webinar_ru_connection_instructions.pdf" target="_blank" className="hover:underline text-yellow-600">
               <FontAwesomeIcon icon={faQuestionCircle} className="mr-4" />
               <FontAwesomeIcon icon={faFilePdf} className="mr-4" />
-              How to use MS Teams
+              How to use Webinar
             </a>
           </div>
         </div>

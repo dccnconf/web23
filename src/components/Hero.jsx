@@ -1,6 +1,6 @@
 import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faDoorOpen} from "@fortawesome/free-solid-svg-icons";
+import {faDoorOpen, faVideo} from "@fortawesome/free-solid-svg-icons";
 import {faFilePdf} from "@fortawesome/free-regular-svg-icons";
 import {faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {faBook} from "@fortawesome/free-solid-svg-icons";
@@ -43,34 +43,26 @@ export default function Hero({ plenary }) {
 
         <div className="mt-3 mx-0 md:mx-16 lg:mx-0 lg:w-1/2 xl:w-4/7">
           <div className="rounded-md shadow">
-            <a href="https://uconfy.com/conf/13"
-               target="_blank"
-               // className="flex items-center justify-center px-2 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-            >
-              <FontAwesomeIcon icon={faDoorOpen} size="lg" className="mr-2 hidden md:block" />
-              Register
+            <a
+              href="https://events.webinar.ru/52911511/640384819"
+              className="w-full flex justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+              target="_blank">
+              <FontAwesomeIcon icon={faVideo} size="lg" className="mr-2 hidden md:block"/>
+              Join plenary session
             </a>
-            {/*<a*/}
-            {/*  href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQ0ZGIxOGQtZTM2MC00NzcyLTliNzItZjUzMWE1YTM4MDVm%40thread.v2/0?context=%7b%22Tid%22%3a%222ae95c20-c675-4c48-88d3-f276b762bf52%22%2c%22Oid%22%3a%22db999021-788c-4c3d-8e8f-1899ab30f3bc%22%7d"*/}
-            {/*  className="w-full flex justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"*/}
-            {/*  target="_blank">*/}
-            {/*  <FontAwesomeIcon icon={faWindows} size="lg" className="mr-2 hidden md:block"/>*/}
-            {/*  Join plenary session*/}
-            {/*</a>*/}
           </div>
         </div>
 
-        {/*<div className="mt-3 mx-0 md:mx-16 lg:mx-0 lg:w-1/2 xl:w-4/7">*/}
-        {/*  <div className="rounded-md shadow">*/}
-        {/*    <a href="https://youtu.be/oemtm_MLfsk"*/}
-        {/*       target="_blank"*/}
-        {/*       className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-12">*/}
-        {/*      <FontAwesomeIcon icon={faYoutube} size="lg" className="mr-2" />*/}
-        {/*      Watch plenary session on YouTube*/}
-        {/*    </a>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+        <div className="mt-3 mx-0 md:mx-16 lg:mx-0 lg:w-1/2 xl:w-4/7">
+          <div className="rounded-md shadow">
+            <a href="https://www.youtube.com/watch?v=M7xgRQHlr4w"
+               target="_blank"
+               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-12">
+              <FontAwesomeIcon icon={faYoutube} size="lg" className="mr-2" />
+              Watch plenary session on YouTube
+            </a>
+          </div>
+        </div>
 
         {/*<div className="mt-3 mx-0 md:mx-16 lg:mx-0 lg:w-1/2 xl:w-4/7">*/}
         {/*  <div className="rounded-md shadow">*/}

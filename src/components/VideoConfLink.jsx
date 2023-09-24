@@ -15,15 +15,13 @@ const VideoConfLink = ({ link, className = "", linkClassName = "text-blue-500 te
 };
 
 const getLinkIcon = link => {
-  if (link.type === "teams")
-    return faWindows;
   if (link.type === "youtube")
     return faYoutube;
   return faVideo;
 };
 
 const getLinkIconClassName = link => {
-  if (link.type === "teams")
+  if (link.type === "webinar")
     return "ml-1 mr-3"
   return "mr-4"
 }

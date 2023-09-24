@@ -28,7 +28,7 @@ const ProgramOverview = ({ program, tracks, className = "" }) => {
               <FontAwesomeIcon icon={faFilePdf} size="lg" className="mr-2 text-purple-500"/>DCCN2023_program_overview.PDF
             </a>
             <span className="ml-2 leading-7 text-gray-700 text-lg">
-              - top view of the schedule grid in PDF format
+              - top view of the schedule grid in PDF format <span className="font-bold">(updated on 23.09.2023)</span>
             </span>
           </li>
           <li>
@@ -36,7 +36,7 @@ const ProgramOverview = ({ program, tracks, className = "" }) => {
               <FontAwesomeIcon icon={faFilePdf} size="lg" className="mr-2 text-purple-500"/>DCCN2023_program.PDF
             </a>
             <span className="ml-2 leading-7 text-gray-700 text-lg">
-              - full conference program in PDF format
+              - full conference program in PDF format <span className="font-bold">(updated on 23.09.2023)</span>
             </span>
           </li>
           <li>

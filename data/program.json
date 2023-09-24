@@ -5,7 +5,14 @@
       "description": "Conference opening day and plenary session",
       "plenary": true,
       "online": {
-        "links": [],
+        "links": [
+          {
+            "text": "Webinar for Plenary Session",
+            "type": "webinar",
+            "url": "https://events.webinar.ru/52911511/640384819",
+            "disabled": false
+          }
+        ],
         "video": null
       },
       "intervals": [
@@ -95,7 +102,35 @@
       "date": "2023-09-26",
       "description": "Conference session",
       "online": {
-        "links": []
+        "links": [
+            {
+              "text": "Webinar for Track A (26.09.2023)",
+              "type": "webinar",
+              "url": "https://events.webinar.ru/52911511/Track_A",
+              "disabled": false,
+              "track": {
+                "slug": "tra"
+              }
+            },
+            {
+              "text": "Webinar for Track B (26.09.2023)",
+              "type": "webinar",
+              "url": "https://events.webinar.ru/69456759/Track_B",
+              "disabled": false,
+              "track": {
+                "slug": "trb"
+              }
+            },
+            {
+              "text": "Webinar for Track C (26.09.2023)",
+              "type": "webinar",
+              "url": "https://events.webinar.ru/82895869/Track_C",
+              "disabled": false,
+              "track": {
+                "slug": "trc"
+              }
+            }
+        ]
       },
       "intervals": [
         {
@@ -160,7 +195,7 @@
         },
         {
           "startTime": "2023-09-26T16:00+03:00",
-          "endTime": "2023-09-26T17:20+03:00",
+          "endTime": "2023-09-26T17:40+03:00",
           "type": "sessions",
           "sessions": [
             {
@@ -174,7 +209,26 @@
       "date": "2023-09-27",
       "description": "Conference session",
       "online": {
-        "links": []
+        "links": [
+          {
+            "text": "Webinar for Track A (27.09.2023)",
+            "type": "webinar",
+            "url": "https://events.webinar.ru/52911511/Track_A",
+            "disabled": false,
+            "track": {
+              "slug": "tra"
+            }
+          },
+          {
+            "text": "Webinar for Track B (27.09.2023)",
+            "type": "webinar",
+            "url": "https://events.webinar.ru/69456759/Track_B",
+            "disabled": false,
+            "track": {
+              "slug": "trb"
+            }
+          }
+        ]
       },
       "intervals": [
         {
@@ -475,7 +529,7 @@
       ],
       "lectures": [
         {
-          "paperId": 2161,
+          "paperId": 1974,
           "startTime": "2023-09-26T11:00+03:00"
         },
         {
@@ -491,7 +545,7 @@
           "startTime": "2023-09-26T12:00+03:00"
         },
         {
-          "paperId": 1974,
+          "paperId": 2161,
           "startTime": "2023-09-26T12:20+03:00"
         },
         {
@@ -606,7 +660,7 @@
           "startTime": "2023-09-26T11:20+03:00"
         },
         {
-          "paperId": 1861,
+          "paperId": 2239,
           "startTime": "2023-09-26T11:40+03:00"
         },
         {
@@ -639,27 +693,27 @@
       ],
       "lectures": [
         {
-          "paperId": 1826,
+          "paperId": 2035,
           "startTime": "2023-09-26T13:30+03:00"
         },
         {
-          "paperId": 1866,
+          "paperId": 1861,
           "startTime": "2023-09-26T13:50+03:00"
         },
         {
-          "paperId": 2025,
+          "paperId": 1895,
           "startTime": "2023-09-26T14:10+03:00"
         },
         {
-          "paperId": 2040,
+          "paperId": 1897,
           "startTime": "2023-09-26T14:30+03:00"
         },
         {
-          "paperId": 2034,
+          "paperId": 1900,
           "startTime": "2023-09-26T14:50+03:00"
         },
         {
-          "paperId": 1867,
+          "paperId": 1933,
           "startTime": "2023-09-26T15:10+03:00"
         }
       ]
@@ -680,20 +734,24 @@
       ],
       "lectures": [
         {
-          "paperId": 1877,
+          "paperId": 2033,
           "startTime": "2023-09-26T16:00+03:00"
         },
         {
-          "paperId": 1817,
+          "paperId": 1877,
           "startTime": "2023-09-26T16:20+03:00"
         },
         {
-          "paperId": 1890,
+          "paperId": 1817,
           "startTime": "2023-09-26T16:40+03:00"
         },
         {
-          "paperId": 1898,
+          "paperId": 1890,
           "startTime": "2023-09-26T17:00+03:00"
+        },
+        {
+          "paperId": 1898,
+          "startTime": "2023-09-26T17:20+03:00"
         }
       ]
     },
@@ -713,7 +771,7 @@
       ],
       "lectures": [
         {
-          "paperId": 1971,
+          "paperId": 2,
           "startTime": "2023-09-27T11:00+03:00",
           "duration": 40
         },
@@ -730,7 +788,7 @@
           "startTime": "2023-09-27T12:20+03:00"
         },
         {
-          "paperId": 2033,
+          "paperId": 1971,
           "startTime": "2023-09-27T12:40+03:00"
         }
       ]
@@ -767,11 +825,11 @@
           "startTime": "2023-09-27T14:30+03:00"
         },
         {
-          "paperId": 1897,
+          "paperId": 2002,
           "startTime": "2023-09-27T14:50+03:00"
         },
         {
-          "paperId": 1900,
+          "paperId": 2008,
           "startTime": "2023-09-27T15:10+03:00"
         }
       ]
@@ -792,24 +850,28 @@
       ],
       "lectures": [
         {
-          "paperId": 2035,
+          "paperId": 1826,
           "startTime": "2023-09-27T16:00+03:00"
         },
         {
-          "paperId": 1895,
+          "paperId": 1866,
           "startTime": "2023-09-27T16:20+03:00"
         },
         {
-          "paperId": 2002,
+          "paperId": 2025,
           "startTime": "2023-09-27T16:40+03:00"
         },
         {
-          "paperId": 1933,
+          "paperId": 2040,
           "startTime": "2023-09-27T17:00+03:00"
         },
         {
-          "paperId": 2008,
+          "paperId": 2034,
           "startTime": "2023-09-27T17:20+03:00"
+        },
+        {
+          "paperId": 1867,
+          "startTime": "2023-09-27T17:40+03:00"
         }
       ]
     },
