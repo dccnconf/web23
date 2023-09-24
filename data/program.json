@@ -401,6 +401,11 @@
       "appeal": "Prof."
     },
     {
+      "name": " J. Sztrik",
+      "slug": "szt",
+      "appeal": "Prof."
+    },
+    {
       "name": "E. Shchetinin",
       "slug": "shc",
       "appeal": "Prof."
@@ -685,10 +690,10 @@
       },
       "chairs": [
         {
-          "slug": "ste"
+          "slug": "efr"
         },
         {
-          "slug": "sop"
+          "slug": "szt"
         }
       ],
       "lectures": [
@@ -842,10 +847,10 @@
       },
       "chairs": [
         {
-          "slug": "efr"
+          "slug": "ste"
         },
         {
-          "slug": "ryk"
+          "slug": "sop"
         }
       ],
       "lectures": [
