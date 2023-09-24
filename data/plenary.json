@@ -1,7 +1,14 @@
 [
   {
     "date": "2023-09-25",
-    "links": [],
+    "links": [
+      {
+        "text": "Webinar for Plenary Session",
+        "type": "webinar",
+        "url": "https://events.webinar.ru/52911511/640384819",
+        "disabled": false
+      }
+    ],
     "video": null,
     "parts": [
       {
