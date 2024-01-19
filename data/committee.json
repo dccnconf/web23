@@ -15,6 +15,7 @@
 }, {
   "name": "Dmitry Kozyrev",
   "slug": "dmitry",
+  "publicityChair": true,
   "affiliations": [{"slug": "ipu"}, {"slug": "rudn"}],
   "avatar": "/images/avatars/kozyrev.jpeg",
   "order": 3

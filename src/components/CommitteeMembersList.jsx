@@ -38,6 +38,13 @@ const MemberCard = ({ member, className = "" }) => (
             </div>
           )
         }
+        {
+          member.publicityChair && (
+            <div className="mt-3 text-sm text-indigo-500 font-bold">
+              Publications & Publicity Chair
+            </div>
+          )
+        }
         <h6 className="text-lg font-bold text-black">{member.name}</h6>
         <ul className="mt-1 text-gray-600 font-medium">
           {
